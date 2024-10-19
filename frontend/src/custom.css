@@ -1,0 +1,25 @@
+/* src/custom.css */
+.flex {
+    display: flex;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .w-1 {
+    width: 50%;
+  }
+  
+  .p-6 {
+    padding: 1.5rem; /* 24px */
+  }
+  
+  .pr-4 {
+    padding-right: 1rem; /* 16px */
+  }
+  
+  .pl-4 {
+    padding-left: 1rem; /* 16px */
+  }
+  
