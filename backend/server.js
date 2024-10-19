@@ -9,6 +9,10 @@ dotenv.config();
 
 const app = express();
 
+app.get('/',(req,res) => {
+    res.json("Resume Builder");
+})
+
 // Middleware
 app.use(cors(
     {
