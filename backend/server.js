@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 // Middleware
 app.use(cors({
-    origin: true,
+    origin: ["https://resume-builder-1711.vercel.app/"],
     methods: ["GET", "POST"],
     credentials: true
 }));
