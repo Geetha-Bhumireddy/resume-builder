@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaPhone, FaBriefcase, FaGraduationCap, FaProjectDiagram, FaAward, FaCertificate } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaBriefcase, FaGraduationCap, FaProjectDiagram, FaAward, FaCertificate, FaTools } from 'react-icons/fa';
 import jsPDF from 'jspdf';
 
 const ResumePreview = ({ resumeData }) => {
@@ -59,7 +59,7 @@ const ResumePreview = ({ resumeData }) => {
         <p>{resumeData.certifications}</p>
       </div>
 
-      {/* Added Skills Section */}
+      {/* Added Skills Section with Icon */}
       <div className="mb-6">
         <h2 className="font-bold text-xl mb-2 underline"><FaTools className="inline mr-1" /> Skills</h2> {/* Added skills icon */}
         <p>{resumeData.skills}</p> {/* Display skills */}
