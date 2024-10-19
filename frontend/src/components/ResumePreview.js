@@ -61,7 +61,7 @@ const ResumePreview = ({ resumeData }) => {
 
       {/* Added Skills Section */}
       <div className="mb-6">
-        <h2 className="font-bold text-xl mb-2 underline">Skills</h2>
+        <h2 className="font-bold text-xl mb-2 underline"><FaTools className="inline mr-1" /> Skills</h2> {/* Added skills icon */}
         <p>{resumeData.skills}</p> {/* Display skills */}
       </div>
 
