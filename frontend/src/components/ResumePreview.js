@@ -14,6 +14,7 @@ const ResumePreview = ({ resumeData }) => {
     doc.text(`Projects: ${resumeData.projects}`, 10, 60);
     doc.text(`Achievements: ${resumeData.achievements}`, 10, 70);
     doc.text(`Certifications: ${resumeData.certifications}`, 10, 80);
+    doc.text(`Skills: ${resumeData.skills}`, 10, 90); // Added skills to PDF
     doc.save('resume.pdf');
   };
 
@@ -56,6 +57,12 @@ const ResumePreview = ({ resumeData }) => {
       <div className="mb-6">
         <h2 className="font-bold text-xl mb-2 underline"><FaCertificate className="inline mr-1" /> Certifications</h2>
         <p>{resumeData.certifications}</p>
+      </div>
+
+      {/* Added Skills Section */}
+      <div className="mb-6">
+        <h2 className="font-bold text-xl mb-2 underline">Skills</h2>
+        <p>{resumeData.skills}</p> {/* Display skills */}
       </div>
 
       <div className="flex justify-center mt-6">
