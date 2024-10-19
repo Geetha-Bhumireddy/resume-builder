@@ -22,7 +22,7 @@ app.use(cors({
 app.use(bodyParser.json());
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/resumeDB', {
+mongoose.connect('mongodb://localhost:27017/resumeDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
